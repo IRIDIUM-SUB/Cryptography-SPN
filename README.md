@@ -69,7 +69,7 @@ int* SPN_encryption(char* x,int RoundKey[],struct SBOX,struct PBOX)
 - Read these files as a constant rule
 - Command line:   -e:encrypt;-d:decrypt;<!--If it's necessary?-->
 - Open interface for the analysis.
-- Use class to contain boxes and round key.
+- Use class to contain boxes and round key.<!--If it's necessary?-->
 
 #### Files Rule
 
@@ -88,4 +88,32 @@ A 4*16-digits array of BIN; each block represents  order's substitution.
 ##### PBOX
 
 A 16-digits array of BIN
+
+#### Arrangements
+
+```c++
+class text{
+      public:
+short int digit[16];
+short int block[4];
+};//To describe plaintext and Intermediate data
+```
+
+Necessary Operation:Sync digits and the blocks.
+
+```c++
+class SBOX{
+      public:
+short int block[16];
+};
+```
+
+```c++
+class PBOX{
+  public:
+  short int order[16];
+};
+```
+
+
 

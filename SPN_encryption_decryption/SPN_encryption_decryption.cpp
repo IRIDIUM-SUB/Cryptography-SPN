@@ -2,8 +2,24 @@
 //
 
 #include <iostream>
+#include<fstream>
 # define Nr 4
 using namespace std;
+
+class TEXT {
+public:
+	short int digit[16];
+	short int block[4];
+};//To describe plaintext and Intermediate data
+class SBOX {
+public:
+	short int block[16];
+};
+class PBOX {
+public:
+	short int order[16];
+};
+
 int main(int argc,char* argv[])
 {
 	if (argc != 2)
@@ -18,6 +34,18 @@ int main(int argc,char* argv[])
 	}
 	if (strcmp(argv[1], "-e") == 0)//encrypt process
 	{
+		cout << "[INFO] Start encrypt process" << endl;
+		/*Load FIle:text*/
+		ifstream  plain;
+		plain.open("Source/plain.txt",  ios::in);
+		if (!plain.is_open())
+		{
+			cout << "Error opening file:plain.txt"; 
+			return 0;
+		}
+		char texttemp[16];
+			plain.getline(texttemp, 16);//Standard File Load Process
+	
 
 	}
 

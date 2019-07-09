@@ -153,6 +153,12 @@
   <ItemGroup>
     <ClCompile Include="SPN_encryption_decryption.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Source\pbox.txt" />
+    <Text Include="Source\plain.txt" />
+    <Text Include="Source\roundkey.txt" />
+    <Text Include="Source\sbox.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
