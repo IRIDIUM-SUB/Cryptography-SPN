@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
-
+# define Nr 4
+using namespace std;
 int main(int argc,char* argv[])
 {
-    std::cout << "Hello World!\n";
+	if (argc != 2)
+	{
+		cout << "[ERROR] Usage:-e:encrypt;-d:decrypt;" << endl;
+		return 0;
+	}
+	if (strcmp(argv[1], "-e") != 0 && strcmp(argv[1], "-d") != 0)
+	{
+		cout << "[ERROR] Wrong Command" << "Usage:-e:encrypt;-d:decrypt;" << endl;
+		return 0;
+	}
+	if (strcmp(argv[1], "-e") == 0)//encrypt process
+	{
+
+	}
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
