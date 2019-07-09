@@ -26,15 +26,10 @@ Project Set in 2019/07/09
 
 #### Sample
 
-**![1562677002997](C:\Users\POTAS\AppData\Roaming\Typora\typora-user-images\1562677002997.png)**
-
-![1562677210824](C:\Users\POTAS\AppData\Roaming\Typora\typora-user-images\1562677210824.png)
-
-![1562677224679](C:\Users\POTAS\AppData\Roaming\Typora\typora-user-images\1562677224679.png)
-
-![1562677234595](C:\Users\POTAS\AppData\Roaming\Typora\typora-user-images\1562677234595.png)
-
-
+![Z68exK.png](https://s2.ax1x.com/2019/07/09/Z68exK.png)
+![Z68nKO.png](https://s2.ax1x.com/2019/07/09/Z68nKO.png)
+![Z68V8x.png](https://s2.ax1x.com/2019/07/09/Z68V8x.png)
+![Z68Z26.png](https://s2.ax1x.com/2019/07/09/Z68Z26.png)
 
 1. Input(Input via File)
     - Plaintext  $x$ $(Len=4\times 4)$
