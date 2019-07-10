@@ -87,9 +87,9 @@ A 4*16-digits array of BIN; each block represents  order's substitution.
 
 ##### PBOX
 
-A 16-digits array of BIN
+A 4*16-digits array of BIN
 
-#### Arrangements
+#### Class design
 
 ```c++
 class text{
@@ -115,5 +115,37 @@ class PBOX{
 };
 ```
 
+<!-- if it's necessary? -->
 
+Merge PBOX and SBOX into one.
 
+#### Instantiation of objects
+
+```c++
+CTest* pTest = new CTest();
+
+delete pTest;//Defined class CTest
+```
+
+pTest用来接收类对象指针。
+
+不用new，直接使用类定义申明：
+
+```c++
+CTest mTest;
+```
+此种创建方式，使用完后不需要手动释放，该类析构函数会自动执行。而new申请的对象，则只有调用到delete时再会执行析构函数，如果程序退出而没有执行delete则会造成内存泄漏
+
+#### Log
+
+Package  a function which is used for switch 4-bits bin array to OCT.
+
+use`cout<<hex<<value` can output in HEX.
+
+P->p;S->s;Roungkey->rk;plaintext->plaintext;
+
+Customize the XOR function.
+
+TODO: atoi process is wrong.
+
+Think:Using File is necessary?????
