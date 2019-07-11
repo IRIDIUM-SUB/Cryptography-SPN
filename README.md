@@ -31,7 +31,7 @@ Project Set in 2019/07/09
 ![Z68V8x.png](https://s2.ax1x.com/2019/07/09/Z68V8x.png)
 ![Z68Z26.png](https://s2.ax1x.com/2019/07/09/Z68Z26.png)
 
-1. Input(Input via File)
+1. Input~~(Input via File)~~
     - Plaintext  $x$ $(Len=4\times 4)$
     - Round Key Plate And the Generation Solution for Each Round 
     - S Box(Substitution)
@@ -71,23 +71,23 @@ int* SPN_encryption(char* x,int RoundKey[],struct SBOX,struct PBOX)
 - Open interface for the analysis.
 - Use class to contain boxes and round key.<!--If it's necessary?-->
 
-#### Files Rule
+#### ~~Files Rule~~
 
-##### Plain text
+##### ~~Plain text~~
 
-A 16-digits array of BIN
+~~A 16-digits array of BIN~~
 
-##### Round Key
+##### ~~Round Key~~
 
-A 32-digits srray of BIN
+~~A 32-digits srray of BIN~~
 
-##### SBOX
+##### ~~SBOX~~
 
-A 4*16-digits array of BIN; each block represents  order's substitution.
+~~A 4*16-digits array of BIN; each block represents  order's substitution.~~
 
-##### PBOX
+##### ~~PBOX~~
 
-A 4*16-digits array of BIN
+~~A 4*16-digits array of BIN~~
 
 #### Class design
 
@@ -149,3 +149,13 @@ Customize the XOR function.
 TODO: atoi process is wrong.
 
 Think:Using File is necessary?????
+
+Finally give up using File stream.
+
+Restart.
+
+Using Command Line to retrive.
+
+Try to use Python?
+
+So,this project ends. 
